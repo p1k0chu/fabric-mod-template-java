@@ -29,7 +29,8 @@ tasks.processResources {
         expand(
             "version" to version,
             "loader_version" to loaderVersion,
-            "minecraft_version" to minecraftVersion
+            "minecraft_version" to minecraftVersion,
+            "fabric_version" to fabricVersion
         )
     }
 }
