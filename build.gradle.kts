@@ -58,6 +58,12 @@ java {
     }
 }
 
+tasks.jar {
+    from("LICENSE") {
+        rename { "${it}_$modId" }
+    }
+}
+
 tasks.test {
     useJUnitPlatform()
 }
